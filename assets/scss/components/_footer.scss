@@ -99,10 +99,12 @@
     }
     @include mobile {
       margin-bottom: 30px;
+      
     }
 
     img {
       margin-bottom: 20px;
+      width:200px;
     }
 
     p {

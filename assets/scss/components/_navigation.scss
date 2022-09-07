@@ -39,7 +39,7 @@
       }
       & a:hover {
         transform: scale(1.04);
-        color:$primary-color;
+        color:$primary-color !important;
       }
     }
   }
@@ -137,9 +137,9 @@
 
   &.nav-bg {
     background: $white;
-    padding: 15px;
+    padding: 10px 15px 10px 15px;
     border: none;
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
     top: 0;
     @include desktop {
       padding: 20px 30px;
@@ -150,6 +150,9 @@
     .navbar-brand {
       .logo-main {
         display: block;
+        height: 50px;
+        width: 200px;
+
       }
 
       .logo-white {
