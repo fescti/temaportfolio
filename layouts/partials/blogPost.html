@@ -12,6 +12,7 @@
         <div class="row justify-content-center">
           {{ range first 3 $.Site.RegularPages }}
           <div class="col-lg-4 col-md-6">
+            <!--<article class="blog-post-item"  onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;"> -->
             <article class="blog-post-item">
               <div class="blog-post-thumb">
                 <a href="{{ .Permalink }}">

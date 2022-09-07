@@ -1,5 +1,5 @@
 .video {
-  background: #f9f2ea;
+  background: $primary-color-ombra;
   padding-bottom: 100px;
   position: relative;
   border-radius: 50px;
@@ -58,7 +58,7 @@
     }
 
     i {
-      color: red;
+      color: $primary-color;
       position: absolute;
       text-align: center;
       top: 50%;
