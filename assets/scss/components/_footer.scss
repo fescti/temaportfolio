@@ -7,7 +7,7 @@
   background-position: top center;
   background-size: cover;
   @include mobile {
-    padding: 120px 0 50px;
+    padding: 20px 0 20px;
   }
   &-subscribe {
     &-title {
@@ -171,7 +171,7 @@
             text-decoration: none;
             display: block;
             transition: all.5s ease-in-out;
-            padding: 10px 0;
+            padding: 5px 0;
             @include mobile {
               font-size: 15px;
             }
