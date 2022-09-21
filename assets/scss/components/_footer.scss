@@ -6,6 +6,17 @@
   background-color:rgba($primary-color,0.4);
   background-position: top center;
   background-size: cover;
+
+
+  .logo-footer{
+    --coloresvg1:var(--colore1svg);
+    --coloresvg2:var(--colore2svg);
+    --coloretestosvg:var(--coloresvgtesto);
+   }
+
+
+
+
   @include mobile {
     padding: 20px 0 20px;
   }
@@ -102,7 +113,7 @@
       
     }
 
-    img {
+    .logo-footer {
       margin-bottom: 20px;
       width:200px;
     }

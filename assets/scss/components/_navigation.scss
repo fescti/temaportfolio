@@ -19,6 +19,12 @@
     padding: 15px 20px;
   }
 
+  .logo-main{
+    --coloresvg1:var(--colore1svg);
+    --coloresvg2:var(--colore2svg);
+    --coloretestosvg:var(--coloresvgtesto);
+   }
+
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -40,7 +46,7 @@
       & a:hover {
         transform: scale(1.04);
         color:$primary-color !important;
-      }
+      } 
     }
   }
 
