@@ -1,6 +1,23 @@
+.containerfeature1 {
+margin-bottom: 50px;
+display: inline-block;
+
+
+}
+
+
+.containerfeature2 {
+  margin-bottom: 50px;
+  display: inline-block;
+  }
+
+
+
 .feature {
   position: relative;
   overflow: hidden;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
 
   @include desktop {
     text-align: center;
