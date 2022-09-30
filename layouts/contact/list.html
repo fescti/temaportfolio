@@ -1,13 +1,33 @@
 {{ define "main" }}
 
 {{ "<!--contactHeader.html-->" | safeHTML }}
-  <section class="page-header">
+  <section class="page-headercontatti">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <h2>{{ .Title }}</h2>
+        </div>
+
+
+        <div class="col-12">
           <p>
-            Compila il form oppure inviami una
+            Ing. Andrea Festi
+            </p>
+            {{ $address := .Site.Params.address }}
+            <a href="tel:{{ $address.phone }}"><i class="ti-mobile"></i> {{ $address.phone }}</a>
+            <br>
+            <a href="mailto:{{ $address.email }}"><i class="ti-email"></i> {{ $address.email }}</a>
+            <br>
+            <p><i class="ti-pin"></i>{{ $address.address }}</p>
+        </div>
+        <div class="col-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2776.7008962074765!2d11.017626499999999!3d45.8972949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf96680eabc72916d!2sAndrea%20Festi!5e0!3m2!1sit!2sit!4v1664539801281!5m2!1sit!2sit" width="100%" height="100%" style="border:0; pointer-events:none" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        <div class="col-12">
+          </div>
+          <div class="col-12"></div>
+          <p>
+            Usa il modulo contatti per scrivermi di un'idea, di un suggerimento, di una proposta di collaborazione.
+          </p>
+          <p>Puoi anche inviami una
             <a href="mailto:{{ .Site.Params.email }}">email</a>
           </p>
         </div>
@@ -26,7 +46,7 @@
               <input
                 type="text"
                 class="form-control"
-                placeholder="Full Name"
+                placeholder="Scrivi il tuo nome"
                 name="Name"
                 required
               />
@@ -35,50 +55,27 @@
               <input
                 type="email"
                 class="form-control"
-                placeholder="Email"
+                placeholder="Scrivi la tua Email"
                 name="email"
                 required
               />
             </div>
             <div class="col-12">
-              <input type="text" class="form-control" placeholder="Subject" name="subject" />
-            </div>
-            <div class="col-12">
               <textarea
                 class="form-control"
-                placeholder="Message"
+                placeholder="Scrivi il tuo messaggio"
                 required
                 cols="30"
                 rows="7"
                 name="message"
               ></textarea>
             </div>
-            <div class="col-6 align-self-center">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="termCondition"
-                  name="terms"
-                  required
-                />
-                <label class="form-check-label" for="termCondition">
-                  Accept <a href="#">terms and conditions</a>
-                </label>
-              </div>
-            </div>
-            <div class="col-6 text-right">
-              <button id="contact-form-button" class="btn btn-primary-filled" type="submit" formtarget="_blank">
-                Submit
+            <div class="col-12">
+              <button id="contact-form-button" class="btn btn-primary-filled" style="width:100%" type="submit" formtarget="_blank">
+                Invia
               </button>
             </div>
-            <div class="col-12">
-              <p id="contact-form-status" class="mt-3"></p>
-            </div>
           </form>
-          <p class="contact-form-generator mt-3">
-            <strong>** </strong><a href="https://fabform.io/" target="_blank">Static website forms</a>
-          </p>
         </div>
       </div>
     </div>
@@ -86,27 +83,8 @@
 
  <!--
 
-          <form name="contact" method="POST" action="/pages/messaggioinviato" data-netlify="true">
-            <div class="col-lg-6">
-            <p>
-              <label>Il tuo nome <input type="text" name="name" placeholder="Scrivi qui il tuo nome" required/></label>
-            </p>
-            <p>
-              <label>Il tuo indirizzo email<input type="email" name="email" placeholder="Scrivi qui la tua mail" required/></label>
-            </p>
-            <p>
-              <label>Messaggio<textarea name="message" placeholder="Scrivi qui il tuo messaggio" required></textarea></label>
-            </p>
-            <p>
-              <button type="submit">Invia</button>
-            </p>
-          </form>
-
-
-
-
-
  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44438.439037451106!2d10.99552134008988!3d45.883263700984266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47820ec143127041%3A0x6a9664123aebfadf!2s38068%20Rovereto%20TN!5e0!3m2!1sit!2sit!4v1663772310709!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   -->
 
 {{ end }}
+
