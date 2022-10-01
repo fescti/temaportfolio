@@ -1,28 +1,47 @@
-//site color variables
+// //COLORI SUL VERDE
+// $body-color: #FFF;
+// $bg-color:#54ab1a8d;
+// $primary-color: #53AB1A;
+// $primary-color-ombra:rgba($primary-color, 0.3);
+// $secondary-color: #7af854;
+// $text-color: #8C8C94;
+// $text-color-dark: #273437;
+// $site-ease: cubic-bezier(0.77, 0, 0.175, 1);
+// $border-color: #EDEDF4;
+
+// :root {
+//     --colore1svg:rgb(141,224,17);
+//     --colore2svg:rgb(34,126,34);
+//     --coloresvgtesto:rgb(41, 41, 41);
+// }
+
+// // solid colors
+// $white: #fff;
+// $black: #000;
+
+// // Font Variables
+// $primary-font: 'Poppins',sans-serif;
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+/// //COLORI AZZURRO-VIOLA
 $body-color: #FFF;
-$bg-color:#54ab1a8d;
-$primary-color: #53AB1A;
-//$primary-color: #00a2ff;
+$bg-color:#0077a6;
+$primary-color: #00B6FF;
 $primary-color-ombra:rgba($primary-color, 0.3);
-$secondary-color: #7af854;
+$secondary-color: #1e92c0;
 $text-color: #8C8C94;
 $text-color-dark: #273437;
 $site-ease: cubic-bezier(0.77, 0, 0.175, 1);
 $border-color: #EDEDF4;
 
-//:root {
-//    --colore1svg:rgb(0, 225, 255);
-//    --colore2svg:rgb(17, 107, 224);
-//}
-
 :root {
-    --colore1svg:rgb(141,224,17);
-    --colore2svg:rgb(34,126,34);
+    --colore1svg:#00B6FF;
+    --colore2svg:#ee00ff;
     --coloresvgtesto:rgb(41, 41, 41);
 }
-
-
-
 
 // solid colors
 $white: #fff;
@@ -30,3 +49,8 @@ $black: #000;
 
 // Font Variables
 $primary-font: 'Poppins',sans-serif;
+
+
+
+
+
